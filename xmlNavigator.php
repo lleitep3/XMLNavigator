@@ -40,11 +40,12 @@ class XMLNavigator {
 
         foreach ($this->attr as $k => $v)
             $path .= "[@{$k}='{$v}']";
-        try {
-            $nodes = $this->xml->xpath($path);
-        } catch (Exception $e) {
+
+        $nodes = $this->xml->xpath($path);
+
+        if (empty($nodes))
             throw new Exception("node {$this->name} not Found");
-        }
+
         return $nodes;
     }
 
@@ -67,7 +68,3 @@ class XMLNavigator {
     }
 
 }
-
-$file = 'demo.xml';
-$xml = new XMLNavigator($file);
-var_dump($xml->teacher(array('nome' => 'Bruno'))->all('studant',array('idade'=>'18')));
