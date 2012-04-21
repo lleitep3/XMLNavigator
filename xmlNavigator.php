@@ -66,5 +66,9 @@ class XMLNavigator {
         $nodes = $this->__getNodes__($name, $attr[0]);
         return (is_array($nodes) ? current($nodes) : $nodes);
     }
+    
+    public function exportSimpleXML(){
+        return new SimpleXMLElement($this->xml->asXML());
+    }
 
 }
