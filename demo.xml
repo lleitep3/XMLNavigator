@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<school>
+    <class number="12">
+        <teacher nome="teacher 1" id="1"/>
+        <studants>
+            <studant nome="aluno 1" idade="9"/>
+            <studant nome="aluno 2" idade="10"/>
+            <studant nome="aluno 3" idade="18"/>
+            <studant nome="aluno 4" idade="11"/>
+            <studant nome="aluno 5" idade="11"/>
+        </studants>
+    </class>    
+    <class number="20">
+        <teacher nome="teacher 2" id="2"/>
+        <studants>
+            <studant nome="aluno 10" idade="22"/>
+            <studant nome="aluno 20" idade="23"/>
+            <studant nome="aluno 30" idade="18"/>
+            <studant nome="aluno 40" idade="18"/>
+            <studant nome="aluno 50" idade="19"/>
+        </studants>
+    </class>
+</school>
